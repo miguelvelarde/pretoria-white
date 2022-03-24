@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "pretoria-white",
-    "slug": "pretoria-white",
+    "name": "pretoria",
+    "slug": "pretoria",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",

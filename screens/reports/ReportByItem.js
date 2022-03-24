@@ -1,14 +1,14 @@
-import { StyleSheet, Text, View, Button } from 'react-native'
+import { StyleSheet, View, Button } from 'react-native'
 import React from 'react'
 
-export default function ClientDetail({navigation}) {
-  
+export default function ReportByItem({navigation}) {
   return (
     <View style={styles.container}>
       <Button
         title='regresar'
-        style={styles.btn}
-        onPress={()=> navigation.goBack()}></Button>
+        onPress={()=> navigation.goBack()}
+        style={styles.btn}></Button>
+    
     </View>
   )
 }
@@ -18,6 +18,6 @@ const styles = StyleSheet.create({
       marginTop: 50
   },
   btn:{
-      marginTop: 50
+      margin: 10
   }
 })

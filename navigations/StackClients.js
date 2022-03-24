@@ -1,8 +1,8 @@
-import { View, Text } from 'react-native'
 import React from 'react'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
-import ClientDetail from './../screens/clients/ClientDetail'
+
 import ClientList from './../screens/clients/ClientList'
+import ClientDetail from '../screens/clients/ClientDetail'
 
 const Stack = createNativeStackNavigator()
 
@@ -11,10 +11,14 @@ export default function StackClients() {
     <Stack.Navigator>
       <Stack.Screen
         name='client-list'
-        component={ClientList}></Stack.Screen>
-      <Stack.Screen
+        component={ClientList}
+        options={{title:'Lista de clientes'}}></Stack.Screen>
+
+    <Stack.Screen
         name='client-detail'
-        component={ClientDetail}></Stack.Screen>
+        component={ClientDetail}
+        options={{title: 'Cliente Detalle'}}></Stack.Screen>
     </Stack.Navigator>
   )
 }
+

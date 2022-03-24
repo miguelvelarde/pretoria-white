@@ -1,6 +1,6 @@
 # pretoria-white
 
-react native navigation kata
+react native - stack navigation kata
 
 
 1. create a react native project
